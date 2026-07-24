@@ -169,20 +169,56 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Image Modal Logic
+    // Image Modal Logic (Slideshow & Swipe)
     const modal = document.getElementById("imageModal");
     const modalImg = document.getElementById("modalImage");
     const modalClose = document.getElementsByClassName("modal-close")[0];
+    const modalPrev = document.querySelector(".modal-prev");
+    const modalNext = document.querySelector(".modal-next");
     
     if(modal && modalImg && modalClose) {
-        document.querySelectorAll('.team-photo').forEach(img => {
-            img.addEventListener('click', function() {
-                modal.style.display = "flex";
-                modal.style.justifyContent = "center";
-                modal.style.alignItems = "center";
-                modalImg.src = this.src;
+        let currentImageIndex = 0;
+        let galleryImages = [];
+
+        const showImage = (index) => {
+            if (index >= galleryImages.length) { currentImageIndex = 0; }
+            else if (index < 0) { currentImageIndex = galleryImages.length - 1; }
+            else { currentImageIndex = index; }
+            
+            modalImg.src = galleryImages[currentImageIndex].src;
+        };
+
+        // Group images by their container grid so slideshow stays within the current tab
+        document.querySelectorAll('.team-photo-grid').forEach(grid => {
+            const images = Array.from(grid.querySelectorAll('.team-photo'));
+            images.forEach((img, index) => {
+                img.addEventListener('click', function() {
+                    galleryImages = images;
+                    currentImageIndex = index;
+                    modal.style.display = "flex";
+                    modal.style.justifyContent = "center";
+                    modal.style.alignItems = "center";
+                    showImage(currentImageIndex);
+                });
             });
         });
+
+        if (modalPrev) modalPrev.addEventListener('click', (e) => { e.stopPropagation(); showImage(currentImageIndex - 1); });
+        if (modalNext) modalNext.addEventListener('click', (e) => { e.stopPropagation(); showImage(currentImageIndex + 1); });
+
+        // Touch Swipe logic
+        let touchstartX = 0;
+        let touchendX = 0;
+        
+        modal.addEventListener('touchstart', e => {
+            touchstartX = e.changedTouches[0].screenX;
+        }, {passive: true});
+
+        modal.addEventListener('touchend', e => {
+            touchendX = e.changedTouches[0].screenX;
+            if (touchendX < touchstartX - 40) { showImage(currentImageIndex + 1); } // Swiped left
+            if (touchendX > touchstartX + 40) { showImage(currentImageIndex - 1); } // Swiped right
+        }, {passive: true});
 
         modalClose.addEventListener('click', () => {
             modal.style.display = "none";

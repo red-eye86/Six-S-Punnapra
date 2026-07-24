@@ -135,6 +135,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Dropdown toggle for mobile/touch
+    const dropdowns = document.querySelectorAll('.dropdown');
+    dropdowns.forEach(dropdown => {
+        const btn = dropdown.querySelector('.dropbtn');
+        if(btn) {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                dropdown.classList.toggle('active-dropdown');
+            });
+        }
+    });
+
+    // Close dropdown when clicking outside
+    window.addEventListener('click', (e) => {
+        if (!e.target.closest('.dropdown')) {
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active-dropdown');
+            });
+        }
+    });
+
     // Hamburger Menu Toggle
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');

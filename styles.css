@@ -71,13 +71,15 @@ h1, h2, h3 {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 900;
-    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
-.logo span {
-    color: var(--primary-electric);
+.logo img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
 }
 
 .nav-links {

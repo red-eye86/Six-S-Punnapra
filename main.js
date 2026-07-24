@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         // Close menu when a link is clicked
-        navLinks.querySelectorAll('a').forEach(link => {
+        navLinks.querySelectorAll('a:not(.dropbtn)').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
             });

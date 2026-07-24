@@ -100,7 +100,7 @@ h1, h2, h3 {
     list-style: none;
     background: #ffffff;
     border-radius: 5px;
-    overflow: hidden;
+    overflow: visible;
     margin: 0 15px;
 }
 
@@ -227,6 +227,7 @@ h1, h2, h3 {
         background-color: #f9f9f9;
         min-width: 100%;
         border-radius: 0;
+        z-index: 100;
     }
     .dropdown-content a {
         padding: 12px 20px;

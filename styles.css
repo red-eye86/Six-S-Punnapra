@@ -792,4 +792,16 @@ input:focus {
     .fball { width: 100px; bottom: 15%; right: 5%; }
     .cball { width: 60px; top: 20%; right: 10%; }
     .shuttle { width: 80px; bottom: 25%; left: 5%; }
+    
+    .tabs-container { padding: 15px; }
+    .tabs-content { padding: 15px; }
+    
+    .team-photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    
+    .team-photo {
+        height: 100px;
+    }
 }

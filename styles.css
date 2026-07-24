@@ -1020,3 +1020,134 @@ input:focus {
         height: 80px;
     }
 }
+
+
+/* Organization Tree Styles */
+.org-chart-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    padding: 40px 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.org-tree {
+    display: flex;
+    justify-content: center;
+    min-width: 900px;
+}
+
+.org-tree ul {
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.org-tree li {
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 10px 0 10px;
+}
+
+/* Connectors */
+.org-tree li::before, .org-tree li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 2px solid #555;
+    width: 50%;
+    height: 20px;
+}
+.org-tree li::after {
+    right: auto;
+    left: 50%;
+    border-left: 2px solid #555;
+}
+.org-tree li:only-child::after, .org-tree li:only-child::before {
+    display: none;
+}
+.org-tree li:only-child {
+    padding-top: 0;
+}
+.org-tree li:first-child::before, .org-tree li:last-child::after {
+    border: 0 none;
+}
+.org-tree li:last-child::before {
+    border-right: 2px solid #555;
+    border-radius: 0 5px 0 0;
+}
+.org-tree li:first-child::after {
+    border-radius: 5px 0 0 0;
+}
+.org-tree ul ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 2px solid #555;
+    width: 0;
+    height: 20px;
+}
+
+/* Nodes */
+.org-tree .node {
+    border: 1px solid transparent;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    min-width: 140px;
+    transition: transform 0.3s ease;
+}
+.org-tree .node:hover {
+    transform: translateY(-5px);
+}
+
+/* Colors */
+.node-purple { background-color: #c4ccff; }
+.node-dark-purple { background-color: #7b85ff; color: #fff !important; }
+.node-cyan { background-color: #00e5ff; }
+.node-light-cyan { background-color: #a3f7ff; }
+.node-mint { background-color: #00fa9a; }
+.node-light-mint { background-color: #a3ffda; }
+.node-yg { background-color: #d4ff33; }
+.node-gold { background-color: #ffcc00; }
+.node-light-gold { background-color: #ffe066; }
+
+/* Side Branch (District Sports Council President) */
+.has-side-branch {
+    position: relative;
+    display: inline-block;
+}
+.side-branch-node {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 60px;
+    white-space: nowrap;
+}
+.side-branch-node::before {
+    content: '←';
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #555;
+    font-weight: bold;
+}

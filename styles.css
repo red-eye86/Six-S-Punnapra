@@ -74,12 +74,25 @@ h1, h2, h3 {
     display: flex;
     align-items: center;
     text-decoration: none;
+    gap: 12px;
 }
 
-.logo img {
-    height: 50px;
+.logo-img {
+    height: 60px;
     width: auto;
     object-fit: contain;
+    mix-blend-mode: screen;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--text-light);
+    letter-spacing: 1px;
+}
+
+.logo-text span {
+    color: var(--primary-electric);
 }
 
 .nav-links {

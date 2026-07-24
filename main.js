@@ -224,6 +224,18 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
+        // Standalone clickable images
+        document.querySelectorAll('.standalone-photo').forEach(img => {
+            img.addEventListener('click', function() {
+                galleryImages = [img];
+                currentImageIndex = 0;
+                modal.style.display = "flex";
+                modal.style.justifyContent = "center";
+                modal.style.alignItems = "center";
+                showImage(currentImageIndex);
+            });
+        });
+
         if (modalPrev) modalPrev.addEventListener('click', (e) => { e.stopPropagation(); showImage(currentImageIndex - 1); });
         if (modalNext) modalNext.addEventListener('click', (e) => { e.stopPropagation(); showImage(currentImageIndex + 1); });
 

@@ -695,11 +695,11 @@ body.lang-ml p, body.lang-ml h2, body.lang-ml h3, body.lang-ml h4, body.lang-ml 
 
 .live-badge, .upcoming-badge {
     position: absolute;
-    top: 20px;
-    right: -45px;
-    width: 200px;
+    top: 35px;
+    right: -60px;
+    width: 250px;
     text-align: center;
-    padding: 5px 0;
+    padding: 7px 0;
     font-size: 0.7rem;
     font-weight: 700;
     transform: rotate(45deg);

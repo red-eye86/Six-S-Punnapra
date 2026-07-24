@@ -862,6 +862,67 @@ input:focus {
     bottom: 30px;
 }
 
+/* Officials Section */
+.officials-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.official-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    width: 250px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s;
+}
+
+.official-card:hover {
+    transform: translateY(-5px);
+}
+
+.official-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid var(--primary-electric);
+}
+
+.photo-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    border: 3px solid var(--primary-electric);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: var(--primary-electric);
+    background: rgba(0, 210, 255, 0.05);
+}
+
+.official-card h3 {
+    font-size: 1.2rem;
+    color: var(--text-main);
+    margin-bottom: 5px;
+}
+
+.official-card .role {
+    color: var(--secondary-orange);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
 /* Mobile Responsiveness */
 @media(max-width: 768px) {
     .vball { width: 150px; top: 10%; }

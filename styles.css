@@ -808,6 +808,34 @@ input:focus {
     font-size: 0.9rem;
 }
 
+/* Toast Notification */
+.toast {
+    position: fixed;
+    bottom: -100px;
+    right: 20px;
+    background: rgba(40, 167, 69, 0.9);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 10000;
+    transition: bottom 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.toast i {
+    font-size: 1.2rem;
+}
+
+.toast.show {
+    bottom: 30px;
+}
+
 /* Mobile Responsiveness */
 @media(max-width: 768px) {
     .vball { width: 150px; top: 10%; }

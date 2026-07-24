@@ -1027,10 +1027,8 @@ input:focus {
     width: 100%;
     overflow-x: auto;
     padding: 40px 20px;
-    background: #ffffff;
-    border-radius: 10px;
+    background: transparent;
     margin-bottom: 40px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 .org-tree {
@@ -1063,14 +1061,14 @@ input:focus {
     position: absolute;
     top: 0;
     right: 50%;
-    border-top: 2px solid #555;
+    border-top: 2px solid #fff;
     width: 50%;
     height: 20px;
 }
 .org-tree li::after {
     right: auto;
     left: 50%;
-    border-left: 2px solid #555;
+    border-left: 2px solid #fff;
 }
 .org-tree li:only-child::after, .org-tree li:only-child::before {
     display: none;
@@ -1082,7 +1080,7 @@ input:focus {
     border: 0 none;
 }
 .org-tree li:last-child::before {
-    border-right: 2px solid #555;
+    border-right: 2px solid #fff;
     border-radius: 0 5px 0 0;
 }
 .org-tree li:first-child::after {
@@ -1093,7 +1091,7 @@ input:focus {
     position: absolute;
     top: 0;
     left: 50%;
-    border-left: 2px solid #555;
+    border-left: 2px solid #fff;
     width: 0;
     height: 20px;
 }

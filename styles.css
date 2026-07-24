@@ -682,7 +682,15 @@ body.lang-ml p, body.lang-ml h2, body.lang-ml h3, body.lang-ml h4, body.lang-ml 
 .sport-card p {
     color: var(--text-muted);
     font-size: 0.95rem;
-    line-height: 1.5;
+    line-height: 1.6;
+}
+
+.sport-sketch {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .live-badge, .upcoming-badge {

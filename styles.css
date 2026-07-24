@@ -925,10 +925,10 @@ input:focus {
 
 /* Mobile Responsiveness */
 @media(max-width: 768px) {
-    .vball { width: 150px; top: 10%; }
-    .fball { width: 100px; bottom: 15%; right: 5%; }
-    .cball { width: 60px; top: 20%; right: 10%; }
-    .shuttle { width: 80px; bottom: 25%; left: 5%; }
+    .vball { width: 100px; top: 100px; left: -10px; opacity: 0.3; }
+    .fball { width: 80px; bottom: 20px; right: -10px; opacity: 0.3; }
+    .cball { width: 50px; top: 120px; right: 0; opacity: 0.3; }
+    .shuttle { width: 60px; bottom: 40px; left: 0; opacity: 0.3; }
     
     .tabs-container { padding: 15px; }
     .tabs-content { padding: 15px; }

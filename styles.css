@@ -477,6 +477,24 @@ body.lang-ml p, body.lang-ml h2, body.lang-ml h3, body.lang-ml h4, body.lang-ml 
     font-size: 1.1rem;
     line-height: 1.6;
 }
+.social-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: rgba(24, 119, 242, 0.1);
+    border: 1px solid #1877F2;
+    color: #1877F2;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: #1877F2;
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(24, 119, 242, 0.4);
+}
 
 .team-photo-grid {
     display: grid;

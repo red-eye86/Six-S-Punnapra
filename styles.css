@@ -233,7 +233,8 @@ h1, h2, h3 {
 
 /* Hero Section */
 .hero {
-    padding: 160px 20px 60px;
+    min-height: 70vh;
+    padding: 160px 20px 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -317,30 +318,30 @@ body.lang-ml p, body.lang-ml h2, body.lang-ml h3, body.lang-ml h4, body.lang-ml 
 }
 
 .vball {
-    width: 250px;
-    top: 15%;
-    left: 10%;
+    width: 200px;
+    top: 140px;
+    left: 8%;
     animation: float 6s ease-in-out infinite;
 }
 
 .fball {
     width: 180px;
-    bottom: 20%;
-    right: 15%;
+    bottom: 50px;
+    right: 12%;
     animation: float 5s ease-in-out infinite reverse;
 }
 
 .cball {
     width: 100px;
-    top: 25%;
-    right: 25%;
+    top: 120px;
+    right: 15%;
     animation: float 4s ease-in-out infinite 1s;
 }
 
 .shuttle {
     width: 120px;
-    bottom: 30%;
-    left: 20%;
+    bottom: 60px;
+    left: 18%;
     animation: float 7s ease-in-out infinite 0.5s;
 }
 

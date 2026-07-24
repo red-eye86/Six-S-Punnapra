@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Punnapra Sixes - Reviving the Spirit of Sports</title>
     <meta name="description" content="Punnapra Sixes is reviving sports in Punnapra. Step out of the screens and onto the court for volleyball, football, cricket, and more.">
-    <link rel="stylesheet" href="styles.css?v=7">
+    <link rel="stylesheet" href="styles.css?v=8">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&family=Noto+Sans+Malayalam:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -227,18 +227,20 @@
             </div>
             <div class="registration">
                 <h4 data-en="Parent Registration" data-ml="രക്ഷിതാക്കളുടെ രജിസ്ട്രേഷൻ">Parent Registration</h4>
-                <form id="regForm" onsubmit="event.preventDefault(); alert('Registration Submitted!');">
-                    <input type="text" placeholder="Parent's Name" data-placeholder-ml="രക്ഷിതാവിന്റെ പേര്" required>
-                    <input type="text" placeholder="Child's Name" data-placeholder-ml="കുട്ടിയുടെ പേര്" required>
-                    <input type="tel" placeholder="Phone Number" data-placeholder-ml="ഫോൺ നമ്പർ" required>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){alert('Registration Submitted successfully!'); document.getElementById('regForm').reset(); submitted=false;}"></iframe>
+                <form id="regForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSefGXNf4WHA2k6JybfPVJQbuy9Ez1iPEmvA0ltv9ZNWEFdcPA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+                    <input type="text" name="entry.303431855" placeholder="Parent's Name" data-placeholder-ml="രക്ഷിതാവിന്റെ പേര്" required>
+                    <input type="text" name="entry.260754013" placeholder="Child's Name" data-placeholder-ml="കുട്ടിയുടെ പേര്" required>
+                    <input type="tel" name="entry.51502017" placeholder="Phone Number" data-placeholder-ml="ഫോൺ നമ്പർ" required>
                     <button type="submit" class="submit-btn" data-en="Enroll Now" data-ml="രജിസ്റ്റർ ചെയ്യുക">Enroll Now</button>
                 </form>
+                <script>var submitted = false;</script>
             </div>
         </div>
         <p class="copyright">© 2026 Six S Punnapra. All rights reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="main.js?v=7"></script>
+    <script src="main.js?v=8"></script>
 </body>
 </html>

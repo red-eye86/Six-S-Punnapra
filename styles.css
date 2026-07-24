@@ -416,7 +416,7 @@ body.lang-ml p, body.lang-ml h2, body.lang-ml h3, body.lang-ml h4, body.lang-ml 
 
 /* Legacy Teams Section */
 .legacy-teams {
-    padding: 100px 20px;
+    padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -622,7 +622,7 @@ body.lang-ml p, body.lang-ml h2, body.lang-ml h3, body.lang-ml h4, body.lang-ml 
 
 /* Generic Sections for Details */
 .generic-section {
-    padding: 100px 20px;
+    padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -647,7 +647,7 @@ body.lang-ml p, body.lang-ml h2, body.lang-ml h3, body.lang-ml h4, body.lang-ml 
 
 /* Sports Section */
 .sports {
-    padding: 100px 20px;
+    padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -733,7 +733,7 @@ body.lang-ml p, body.lang-ml h2, body.lang-ml h3, body.lang-ml h4, body.lang-ml 
 
 /* Footer & Registration */
 .footer {
-    padding: 100px 20px 20px;
+    padding: 40px 20px 20px;
 }
 
 .footer-content {

@@ -1,0 +1,154 @@
+/* main.js */
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize Particles.js
+    if (typeof particlesJS !== 'undefined') {
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 40,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": ["#00d2ff", "#ff5722"]
+                },
+                "shape": {
+                    "type": "circle"
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 2,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.1,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1,
+                    "direction": "top",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 0.5
+                        }
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    }
+
+    // Translation logic
+    const langSwitch = document.getElementById('langSwitch');
+    
+    const translateTo = (lang) => {
+        if (lang === 'ml') {
+            document.body.classList.add('lang-ml');
+            document.body.classList.remove('lang-en');
+        } else {
+            document.body.classList.add('lang-en');
+            document.body.classList.remove('lang-ml');
+        }
+
+        document.querySelectorAll('[data-en]').forEach(el => {
+            if (lang === 'ml') {
+                el.innerText = el.getAttribute('data-ml');
+            } else {
+                el.innerText = el.getAttribute('data-en');
+            }
+        });
+
+        document.querySelectorAll('input[data-placeholder-ml]').forEach(el => {
+            if (lang === 'ml') {
+                if (!el.getAttribute('data-placeholder-en')) {
+                    el.setAttribute('data-placeholder-en', el.getAttribute('placeholder'));
+                }
+                el.setAttribute('placeholder', el.getAttribute('data-placeholder-ml'));
+            } else {
+                if (el.getAttribute('data-placeholder-en')) {
+                    el.setAttribute('placeholder', el.getAttribute('data-placeholder-en'));
+                }
+            }
+        });
+    };
+
+    langSwitch.addEventListener('change', (e) => {
+        if (e.target.checked) {
+            translateTo('ml'); // Malayalam
+        } else {
+            translateTo('en'); // English
+        }
+    });
+
+    // Parallax scrolling for floating items
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        document.querySelectorAll('.float-item').forEach((item, index) => {
+            // Apply slight vertical movement on scroll to enhance anti-gravity feel
+            const speed = (index + 1) * 0.15;
+            item.style.transform = `translateY(${scrolled * speed}px)`;
+        });
+    });
+
+    // Hamburger Menu Toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (hamburger && navLinks) {
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close menu when a link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    }
+});

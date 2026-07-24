@@ -797,11 +797,11 @@ input:focus {
     .tabs-content { padding: 15px; }
     
     .team-photo-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
     }
     
     .team-photo {
-        height: 100px;
+        height: 80px;
     }
 }

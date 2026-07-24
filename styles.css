@@ -932,6 +932,23 @@ input:focus {
     
     .tabs-container { padding: 15px; }
     .tabs-content { padding: 15px; }
+
+    .tabs-header {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 15px;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+    }
+    
+    .tabs-header::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .tab-btn {
+        flex: 0 0 auto;
+    }
     
     .team-photo-grid {
         grid-template-columns: repeat(3, 1fr);

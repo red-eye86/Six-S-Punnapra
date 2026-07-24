@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punnapra Sixes - Reviving the Spirit of Sports</title>
+    <meta name="description" content="Punnapra Sixes is reviving sports in Punnapra. Step out of the screens and onto the court for volleyball, football, cricket, and more.">
+    <link rel="stylesheet" href="styles.css?v=23">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&family=Noto+Sans+Malayalam:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <nav class="navbar floating-card">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Six S Punnapra Logo" class="logo-img">
+            <span class="logo-text">Six S <span>Punnapra</span></span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html#about" data-en="Profile" data-ml="പ്രൊഫൈൽ">Profile</a></li>
+            <li><a href="sports.html" data-en="Current Season" data-ml="നിലവിലെ സീസൺ">Current Season</a></li>
+            <li><a href="officials.html" data-en="Club Officials" data-ml="ക്ലബ് ഭാരവാഹികൾ">Club Officials</a></li>
+            <li><a href="tournaments.html" data-en="Tournaments" data-ml="ടൂർണമെന്റുകൾ">Tournaments</a></li>
+            <li><a href="associations.html" data-en="District Associations" data-ml="ജില്ലാ അസോസിയേഷനുകൾ">District Associations</a></li>
+            <li><a href="infrastructure.html" data-en="Infrastructure" data-ml="അടിസ്ഥാന സൗകര്യങ്ങൾ">Infrastructure</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="lang-toggle">
+                <input type="checkbox" id="langSwitch">
+                <label for="langSwitch" class="toggle-label">
+                    <span class="en">EN</span>
+                    <span class="ml">ML</span>
+                    <div class="switch-btn"></div>
+                </label>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+<div style="height: 120px;"></div>
+    <section class="generic-section" id="infrastructure">
+        <h2 class="section-title" data-en="Infrastructure" data-ml="അടിസ്ഥാന സൗകര്യങ്ങൾ">Infrastructure</h2>
+        <div class="floating-card content-card">
+            <h3 data-en="Facilities & Equipment" data-ml="സൗകര്യങ്ങളും ഉപകരണങ്ങളും">Facilities & Equipment</h3>
+            <p data-en="Details about our newly renovated courts, high-quality lighting, and modern training equipment." data-ml="ഞങ്ങളുടെ പുതുതായി നവീകരിച്ച കോർട്ടുകൾ, ഉയർന്ന നിലവാരമുള്ള ലൈറ്റിംഗ്, ആധുനിക പരിശീലന ഉപകരണങ്ങൾ എന്നിവയെക്കുറിച്ചുള്ള വിവരങ്ങൾ.">Details about our newly renovated courts, high-quality lighting, and modern training equipment.</p>
+        </div>
+    </section>
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <i class="fas fa-check-circle"></i>
+        <span data-en="Registration Submitted successfully!" data-ml="രജിസ്ട്രേഷൻ വിജയകരമായി സമർപ്പിച്ചു!">Registration Submitted successfully!</span>
+    </div>
+
+    <!-- Image Modal (Lightbox) -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <span class="modal-prev">&#10094;</span>
+        <span class="modal-next">&#10095;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <footer class="footer" id="register">
+        <div class="footer-content floating-card">
+            <div class="contact-info">
+                <h3 data-en="Join the Community" data-ml="ഞങ്ങളോടൊപ്പം ചേരൂ">Join the Community</h3>
+                <p>📍 <span data-en="Near Viyani Cemetery, Punnapra" data-ml="വിയാനി സെമിത്തേരിക്ക് സമീപം, പുന്നപ്ര">Near Viyani Cemetery, Punnapra</span></p>
+                <div class="social-links">
+                    <a href="#" class="social-btn">FB</a>
+                    <a href="#" class="social-btn">IG</a>
+                    <a href="#" class="social-btn">YT</a>
+                </div>
+            </div>
+            <div class="registration">
+                <h4 data-en="Parent Registration" data-ml="രക്ഷിതാക്കളുടെ രജിസ്ട്രേഷൻ">Parent Registration</h4>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){showToast(); document.getElementById('regForm').reset(); submitted=false;}"></iframe>
+                <form id="regForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSefGXNf4WHA2k6JybfPVJQbuy9Ez1iPEmvA0ltv9ZNWEFdcPA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+                    <input type="text" name="entry.303431855" placeholder="Parent's Name" data-placeholder-ml="രക്ഷിതാവിന്റെ പേര്" required>
+                    <input type="text" name="entry.260754013" placeholder="Child's Name" data-placeholder-ml="കുട്ടിയുടെ പേര്" required>
+                    <input type="tel" name="entry.51502017" placeholder="Phone Number" data-placeholder-ml="ഫോൺ നമ്പർ" required>
+                    <button type="submit" class="submit-btn" data-en="Enroll Now" data-ml="രജിസ്റ്റർ ചെയ്യുക">Enroll Now</button>
+                </form>
+                <script>var submitted = false;</script>
+            </div>
+        </div>
+        <p class="copyright">© 2026 Six S Punnapra. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="main.js?v=23"></script>
+</body>
+</html>

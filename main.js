@@ -147,12 +147,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Close dropdown when clicking outside
+    // Close dropdown and mobile menu when clicking outside
     window.addEventListener('click', (e) => {
+        // Close dropdown
         if (!e.target.closest('.dropdown')) {
             document.querySelectorAll('.dropdown').forEach(dropdown => {
                 dropdown.classList.remove('active-dropdown');
             });
+        }
+        
+        // Close mobile menu
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        if (navLinks && navLinks.classList.contains('active')) {
+            if (!e.target.closest('.nav-links') && !e.target.closest('.hamburger')) {
+                navLinks.classList.remove('active');
+            }
         }
     });
 

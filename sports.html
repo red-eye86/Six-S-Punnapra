@@ -53,7 +53,8 @@
     <section class="sports" id="sports">
         <h2 class="section-title" data-en="Our Sports & Activities" data-ml="കായിക ഇനങ്ങളും പ്രവർത്തനങ്ങളും">Our Sports & Activities</h2>
         <div class="grid-container">
-            <div class="sport-card live floating-card">
+            <div class="sport-card live floating-card clickable" onclick="openUpdatesModal()" style="cursor: pointer; position: relative;" title="Click to view construction updates!">
+                <div class="click-hint" style="position: absolute; top: -10px; right: -10px; background: var(--secondary-orange); color: white; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; z-index: 10; animation: bounce 2s infinite;">Click for Updates!</div>
                 <div class="icon-3d"><img src="images/volleyball.png" alt="Volleyball"></div>
                 <div class="live-badge" style="background: var(--secondary-orange);">Under Construction</div>
                 <h3 data-en="Volleyball" data-ml="വോളിബോൾ">Volleyball</h3>
@@ -122,6 +123,22 @@
         </div>
         <p class="copyright">© 2026 Six S Punnapra. All rights reserved.</p>
     </footer>
+
+    <!-- Updates Modal -->
+    <div id="updatesModal" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn" onclick="closeUpdatesModal()">&times;</span>
+            <h2 data-en="Volleyball Court Progress" data-ml="വോളിബോൾ കോർട്ട് പുരോഗതി" style="margin-bottom: 20px; color: var(--primary-cyan);">Volleyball Court Progress</h2>
+            <div class="updates-gallery" id="updatesGallery">
+                <video controls autoplay muted loop>
+                    <source src="images/six-s-club/Video-01.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="images/six-s-club/Image-01.jpeg" alt="Volleyball Court Construction Update 1">
+                <img src="images/six-s-club/Image-02.jpeg" alt="Volleyball Court Construction Update 2">
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="main.js?v=27"></script>

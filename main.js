@@ -275,3 +275,28 @@ window.showToast = function() {
         }, 4000);
     }
 };
+
+// Volleyball Updates Modal Logic
+window.openUpdatesModal = function() {
+    const modal = document.getElementById('updatesModal');
+    if (modal) {
+        modal.style.display = 'flex';
+        modal.style.justifyContent = 'center';
+        modal.style.alignItems = 'center';
+    }
+};
+
+window.closeUpdatesModal = function() {
+    const modal = document.getElementById('updatesModal');
+    if (modal) {
+        modal.style.display = 'none';
+    }
+};
+
+// Close modal when clicking outside of modal-content
+window.addEventListener('click', (e) => {
+    const modal = document.getElementById('updatesModal');
+    if (e.target === modal) {
+        window.closeUpdatesModal();
+    }
+});

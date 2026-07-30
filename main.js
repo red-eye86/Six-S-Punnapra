@@ -266,12 +266,24 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Toast Notification
-window.showToast = function() {
+window.showToast = function(msg = null, iconClass = null) {
     const toast = document.getElementById('toast');
     if (toast) {
+        const span = toast.querySelector('span');
+        const i = toast.querySelector('i');
+        
+        if (msg && span) span.innerText = msg;
+        if (iconClass && i) i.className = iconClass;
+
         toast.classList.add('show');
         setTimeout(() => {
             toast.classList.remove('show');
+            // Reset to default
+            if (msg && span) {
+                const mlLang = document.body.classList.contains('lang-ml');
+                span.innerText = mlLang ? span.getAttribute('data-ml') : span.getAttribute('data-en');
+            }
+            if (iconClass && i) i.className = 'fas fa-check-circle';
         }, 4000);
     }
 };

@@ -23,7 +23,7 @@ for (const page of pages) {
 
   for (const ref of refs) {
     if (/^(https?:|mailto:|tel:|data:)/.test(ref)) {
-      if (!/^https:\/\/(docs\.google\.com|www\.facebook\.com)\//.test(ref)) errors.push(`${page}: unexpected external URL ${ref}`);
+      if (!/^https:\/\/(docs\.google\.com|www\.facebook\.com|sixspunnapra\.com)\//.test(ref)) errors.push(`${page}: unexpected external URL ${ref}`);
       continue;
     }
     if (ref === '#') { errors.push(`${page}: href="#" placeholder`); continue; }

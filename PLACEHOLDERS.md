@@ -3,7 +3,7 @@
 This document tracks all placeholder values, links, and missing assets that require input from club officials / site owner as outlined in Section 10 of the Master Build Plan.
 
 ## 1. Domains & SEO
-- `SITE_URL`: Needs real domain (e.g., `https://punnaprasixes.com`). Currently unset; Vite strips `%SITE_URL%` tags to prevent broken/invalid canonical URLs until configured. Set via `.env` (`SITE_URL=https://your-domain.com`).
+- `SITE_URL`: `https://sixspunnapra.com` (Configured in `.env` and `netlify.toml`). Canonical tags and OpenGraph image tags now accurately reference this live domain.
 
 ## 2. Social Media & Contacts
 - `TODO_REPLACE_ME_FACEBOOK`: Club official Facebook page URL.

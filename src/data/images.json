@@ -1,14 +1,18 @@
 {
   "logo": {
-    "source": "logo.png",
+    "source": "final-logo-transparent.png",
     "variants": [
       {
         "w": 120,
-        "h": 110
+        "h": 77
       },
       {
         "w": 240,
-        "h": 220
+        "h": 155
+      },
+      {
+        "w": 480,
+        "h": 310
       }
     ]
   },
@@ -130,15 +134,15 @@
     ]
   },
   "six-s-club/six-s-group": {
-    "source": "six-s-club/Six S.png",
+    "source": "six-s-club/Six S.jpeg",
     "variants": [
       {
         "w": 400,
-        "h": 398
+        "h": 280
       },
       {
-        "w": 1600,
-        "h": 1592
+        "w": 1234,
+        "h": 864
       }
     ]
   },

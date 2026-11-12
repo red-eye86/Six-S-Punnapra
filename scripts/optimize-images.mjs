@@ -13,7 +13,7 @@ const OUT = path.join(ROOT, 'public', 'images');
 // key (output path without extension) -> { src, widths }
 // Widths are chosen from the largest rendered CSS size (x2 for retina).
 const jobs = {
-  'logo': { src: 'logo.png', widths: [120, 240] },
+  'logo': { src: 'final-logo-transparent.png', widths: [120, 240, 480] },
   'sports/volleyball': { src: 'volleyball.png', widths: [200, 400] },
   'sports/football': { src: 'football.png', widths: [200, 400] },
   'sports/cricket': { src: 'cricket.png', widths: [120, 240] },
@@ -23,7 +23,7 @@ const jobs = {
   'volleyball-court-sketch': { src: 'volleyball court sketch.jpeg', widths: [400, 800] },
   'six-s-club/president-sebastian': { src: 'six-s-club/Bush.png', widths: [300, 600] },
   'six-s-club/secretary-sajan': { src: 'six-s-club/Sajan.jpeg', widths: [300, 600] },
-  'six-s-club/six-s-group': { src: 'six-s-club/Six S.png', widths: [400, 1600] },
+  'six-s-club/six-s-group': { src: 'six-s-club/Six S.jpeg', widths: [400, 1600] },
   'six-s-club/construction-update-1': { src: 'six-s-club/Image-01.jpeg', widths: [400, 800] },
   'six-s-club/construction-update-2': { src: 'six-s-club/Image-02.jpeg', widths: [400, 800] },
 };
@@ -64,15 +64,15 @@ for (const [key, { src, widths }] of Object.entries(jobs)) {
 }
 
 // Open Graph share image (1200x630): logo centred on the brand background.
-const logo = await sharp(path.join(SRC, 'logo.png')).resize({ height: 420 }).png().toBuffer();
+const logo = await sharp(path.join(SRC, 'final-logo-transparent.png')).resize({ height: 420 }).png().toBuffer();
 await sharp({ create: { width: 1200, height: 630, channels: 3, background: '#0b0f19' } })
   .composite([{ input: logo, gravity: 'center' }])
   .jpeg({ quality: 82 })
   .toFile(path.join(OUT, 'og-default.jpg'));
 
 // Favicons
-await sharp(path.join(SRC, 'logo.png')).resize(32, 32, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } }).png().toFile(path.join(ROOT, 'public', 'favicon-32.png'));
-await sharp(path.join(SRC, 'logo.png')).resize(180, 180, { fit: 'contain', background: '#0b0f19' }).png().toFile(path.join(ROOT, 'public', 'apple-touch-icon.png'));
+await sharp(path.join(SRC, 'final-logo-transparent.png')).resize(32, 32, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } }).png().toFile(path.join(ROOT, 'public', 'favicon-32.png'));
+await sharp(path.join(SRC, 'final-logo-transparent.png')).resize(180, 180, { fit: 'contain', background: '#0b0f19' }).png().toFile(path.join(ROOT, 'public', 'apple-touch-icon.png'));
 
 await mkdir(path.join(ROOT, 'src', 'data'), { recursive: true });
 await writeFile(path.join(ROOT, 'src', 'data', 'images.json'), JSON.stringify(manifest, null, 2) + '\n');

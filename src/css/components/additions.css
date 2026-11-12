@@ -143,6 +143,66 @@ body.lang-ml h4 {
     letter-spacing: 0.3px;
 }
 
+/* ---------- Privacy & Consent Controls (No inline styles) ---------- */
+.privacy-link-wrap {
+    margin-top: 15px;
+}
+
+.privacy-link {
+    color: var(--primary-electric);
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+
+.hp {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.consent-label {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.consent-checkbox {
+    margin-top: 3px;
+    accent-color: var(--primary-electric);
+}
+
+#formStatus {
+    min-height: 1.2em;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.privacy-card {
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.privacy-card h3 {
+    margin-top: 30px;
+}
+
+.privacy-card h3:first-of-type {
+    margin-top: 0;
+}
+
+.privacy-list {
+    margin: 15px 0 20px 25px;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
 /* Modern Glassmorphic Nav-links */
 .nav-links {
     background: rgba(255, 255, 255, 0.08) !important;

@@ -6,6 +6,8 @@ import { initLightbox } from './lightbox.js';
 import { initParallax } from './parallax.js';
 import { initRegistrationForm } from './form.js';
 import { loadParticles } from './particles.js';
+import { initTilt } from './tilt.js';
+import { initScrollReveal } from './scroll-reveal.js';
 
 // Language first, so translated text is in place as early as possible.
 initI18n();
@@ -14,6 +16,8 @@ initTabs();
 initLightbox();
 initParallax();
 initRegistrationForm();
+initTilt();
+initScrollReveal();
 
 // Decorative background: load after the page is interactive (not on the critical path).
 const idle = window.requestIdleCallback || ((cb) => setTimeout(cb, 200));

@@ -7,7 +7,8 @@ export function initTilt() {
   // Disable on mobile/touch pointers to preserve clean swipe & scrolling
   if (window.matchMedia('(pointer: coarse)').matches) return;
 
-  const cards = document.querySelectorAll('.floating-card, .sport-card, .official-card');
+  // Exclude navbar from 3D tilt so it stays pinned and centered
+  const cards = document.querySelectorAll('.floating-card:not(.navbar), .sport-card, .official-card');
 
   cards.forEach((card) => {
     // Add sheen reflection layer if not present
@@ -60,3 +61,4 @@ export function initTilt() {
     card.addEventListener('mouseleave', onMouseLeave);
   });
 }
+

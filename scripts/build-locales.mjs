@@ -38,3 +38,4 @@ ml['Parent Registration'] = 'രക്ഷിതാക്കളുടെ രജ�
 writeFileSync('public/locales/en.json', JSON.stringify(en, null, 2) + '\n');
 writeFileSync('public/locales/ml.json', JSON.stringify(ml, null, 2) + '\n');
 console.log('Successfully wrote', Object.keys(en).length, 'translations to en.json & ml.json');
+

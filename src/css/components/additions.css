@@ -143,12 +143,49 @@ body.lang-ml h4 {
     letter-spacing: 0.3px;
 }
 
-/* Navbar backdrop polish */
+/* Modern Glassmorphic Nav-links */
+.nav-links {
+    background: rgba(255, 255, 255, 0.08) !important;
+    backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 30px !important;
+}
+
+.nav-links li {
+    border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.nav-links a,
+.nav-links .dropbtn {
+    color: var(--text-main) !important;
+    font-weight: 500 !important;
+}
+
+.nav-links a:hover,
+.nav-links .dropbtn:hover {
+    background: rgba(0, 210, 255, 0.2) !important;
+    color: var(--primary-electric) !important;
+}
+
+/* Navbar backdrop polish & fix centering */
 .navbar.floating-card {
-    background: rgba(11, 17, 30, 0.85) !important;
+    position: fixed !important;
+    top: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 95% !important;
+    max-width: 1400px !important;
+    background: rgba(11, 17, 30, 0.88) !important;
     backdrop-filter: blur(20px) saturate(190%) !important;
     -webkit-backdrop-filter: blur(20px) saturate(190%) !important;
     border: 1px solid rgba(0, 210, 255, 0.22) !important;
+    z-index: 1000 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 210, 255, 0.15) !important;
+}
+
+.navbar.floating-card:hover {
+    transform: translateX(-50%) translateY(-2px) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 25px rgba(0, 210, 255, 0.25) !important;
 }
 
 .dropdown-content {

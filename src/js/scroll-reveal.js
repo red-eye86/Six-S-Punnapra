@@ -30,3 +30,4 @@ export function initScrollReveal() {
 
   elements.forEach((el) => observer.observe(el));
 }
+

@@ -1,0 +1,392 @@
+{
+  "logo": {
+    "source": "logo.png",
+    "variants": [
+      {
+        "w": 120,
+        "h": 110
+      },
+      {
+        "w": 240,
+        "h": 220
+      }
+    ]
+  },
+  "sports/volleyball": {
+    "source": "volleyball.png",
+    "variants": [
+      {
+        "w": 200,
+        "h": 200
+      },
+      {
+        "w": 400,
+        "h": 400
+      }
+    ]
+  },
+  "sports/football": {
+    "source": "football.png",
+    "variants": [
+      {
+        "w": 200,
+        "h": 200
+      },
+      {
+        "w": 400,
+        "h": 400
+      }
+    ]
+  },
+  "sports/cricket": {
+    "source": "cricket.png",
+    "variants": [
+      {
+        "w": 120,
+        "h": 120
+      },
+      {
+        "w": 240,
+        "h": 240
+      }
+    ]
+  },
+  "sports/shuttlecock": {
+    "source": "shuttlecock.png",
+    "variants": [
+      {
+        "w": 140,
+        "h": 140
+      },
+      {
+        "w": 280,
+        "h": 280
+      }
+    ]
+  },
+  "youth": {
+    "source": "youth.png",
+    "variants": [
+      {
+        "w": 400,
+        "h": 400
+      },
+      {
+        "w": 800,
+        "h": 800
+      }
+    ]
+  },
+  "payment-options": {
+    "source": "Payment Options.jpeg",
+    "variants": [
+      {
+        "w": 600,
+        "h": 424
+      },
+      {
+        "w": 1200,
+        "h": 848
+      }
+    ]
+  },
+  "volleyball-court-sketch": {
+    "source": "volleyball court sketch.jpeg",
+    "variants": [
+      {
+        "w": 400,
+        "h": 395
+      },
+      {
+        "w": 800,
+        "h": 789
+      }
+    ]
+  },
+  "six-s-club/president-sebastian": {
+    "source": "six-s-club/Bush.png",
+    "variants": [
+      {
+        "w": 300,
+        "h": 363
+      },
+      {
+        "w": 600,
+        "h": 726
+      }
+    ]
+  },
+  "six-s-club/secretary-sajan": {
+    "source": "six-s-club/Sajan.jpeg",
+    "variants": [
+      {
+        "w": 300,
+        "h": 306
+      },
+      {
+        "w": 600,
+        "h": 612
+      }
+    ]
+  },
+  "six-s-club/six-s-group": {
+    "source": "six-s-club/Six S.png",
+    "variants": [
+      {
+        "w": 400,
+        "h": 398
+      },
+      {
+        "w": 1600,
+        "h": 1592
+      }
+    ]
+  },
+  "six-s-club/construction-update-1": {
+    "source": "six-s-club/Image-01.jpeg",
+    "variants": [
+      {
+        "w": 400,
+        "h": 185
+      },
+      {
+        "w": 800,
+        "h": 370
+      }
+    ]
+  },
+  "six-s-club/construction-update-2": {
+    "source": "six-s-club/Image-02.jpeg",
+    "variants": [
+      {
+        "w": 400,
+        "h": 185
+      },
+      {
+        "w": 800,
+        "h": 370
+      }
+    ]
+  },
+  "legacy-teams/super-star/super-star-01": {
+    "source": "legacy-teams/super-star/493232160_2836502139885379_1194234253935674061_n.jpg",
+    "variants": [
+      {
+        "w": 400,
+        "h": 300
+      },
+      {
+        "w": 1400,
+        "h": 1050
+      }
+    ]
+  },
+  "legacy-teams/super-star/super-star-02": {
+    "source": "legacy-teams/super-star/493282726_2836498959885697_3110868954289055529_n.jpg",
+    "variants": [
+      {
+        "w": 400,
+        "h": 300
+      },
+      {
+        "w": 1400,
+        "h": 1050
+      }
+    ]
+  },
+  "legacy-teams/super-star/super-star-03": {
+    "source": "legacy-teams/super-star/493531929_2836499053219021_7370532103570705956_n.jpg",
+    "variants": [
+      {
+        "w": 400,
+        "h": 300
+      },
+      {
+        "w": 1400,
+        "h": 1050
+      }
+    ]
+  },
+  "legacy-teams/super-star/super-star-04": {
+    "source": "legacy-teams/super-star/493725314_2836497953219131_7144436633352386837_n.jpg",
+    "variants": [
+      {
+        "w": 400,
+        "h": 300
+      },
+      {
+        "w": 1400,
+        "h": 1050
+      }
+    ]
+  },
+  "legacy-teams/super-star/super-star-05": {
+    "source": "legacy-teams/super-star/493846093_2836502076552052_6295141429065186245_n.jpg",
+    "variants": [
+      {
+        "w": 400,
+        "h": 300
+      },
+      {
+        "w": 1400,
+        "h": 1050
+      }
+    ]
+  },
+  "legacy-teams/super-star/super-star-06": {
+    "source": "legacy-teams/super-star/493896950_2836499013219025_831402719669951966_n.jpg",
+    "variants": [
+      {
+        "w": 400,
+        "h": 300
+      },
+      {
+        "w": 1400,
+        "h": 1050
+      }
+    ]
+  },
+  "legacy-teams/super-star/super-star-07": {
+    "source": "legacy-teams/super-star/493927561_2836502986551961_2810957600854000454_n.jpg",
+    "variants": [
+      {
+        "w": 400,
+        "h": 300
+      },
+      {
+        "w": 1400,
+        "h": 1050
+      }
+    ]
+  },
+  "legacy-teams/super-star/super-star-08": {
+    "source": "legacy-teams/super-star/493939191_2836502019885391_6016545471426079418_n.jpg",
+    "variants": [
+      {
+        "w": 400,
+        "h": 300
+      },
+      {
+        "w": 1400,
+        "h": 1050
+      }
+    ]
+  },
+  "legacy-teams/super-star/super-star-09": {
+    "source": "legacy-teams/super-star/493951128_2836502069885386_5299005616175836615_n.jpg",
+    "variants": [
+      {
+        "w": 400,
+        "h": 300
+      },
+      {
+        "w": 1400,
+        "h": 1050
+      }
+    ]
+  },
+  "legacy-teams/super-star/super-star-10": {
+    "source": "legacy-teams/super-star/493969234_2836498689885724_1239127046187329979_n.jpg",
+    "variants": [
+      {
+        "w": 400,
+        "h": 300
+      },
+      {
+        "w": 1400,
+        "h": 1050
+      }
+    ]
+  },
+  "legacy-teams/super-star/super-star-11": {
+    "source": "legacy-teams/super-star/493976073_2836502203218706_948655562376814370_n.jpg",
+    "variants": [
+      {
+        "w": 400,
+        "h": 300
+      },
+      {
+        "w": 1400,
+        "h": 1050
+      }
+    ]
+  },
+  "legacy-teams/super-star/super-star-12": {
+    "source": "legacy-teams/super-star/493981834_2836498943219032_6004860561770741916_n.jpg",
+    "variants": [
+      {
+        "w": 400,
+        "h": 300
+      },
+      {
+        "w": 1400,
+        "h": 1050
+      }
+    ]
+  },
+  "legacy-teams/super-star/super-star-13": {
+    "source": "legacy-teams/super-star/494065808_2836503159885277_7532903615985797835_n.jpg",
+    "variants": [
+      {
+        "w": 400,
+        "h": 300
+      },
+      {
+        "w": 1400,
+        "h": 1050
+      }
+    ]
+  },
+  "legacy-teams/super-star/super-star-14": {
+    "source": "legacy-teams/super-star/494070218_2836498986552361_7813212888602181202_n.jpg",
+    "variants": [
+      {
+        "w": 400,
+        "h": 300
+      },
+      {
+        "w": 1400,
+        "h": 1050
+      }
+    ]
+  },
+  "legacy-teams/super-star/super-star-15": {
+    "source": "legacy-teams/super-star/494171213_2836502083218718_6205966593218703911_n.jpg",
+    "variants": [
+      {
+        "w": 400,
+        "h": 300
+      },
+      {
+        "w": 1400,
+        "h": 1050
+      }
+    ]
+  },
+  "legacy-teams/super-star/super-star-16": {
+    "source": "legacy-teams/super-star/494271732_2836498936552366_1778626140743597617_n.jpg",
+    "variants": [
+      {
+        "w": 400,
+        "h": 300
+      },
+      {
+        "w": 1400,
+        "h": 1050
+      }
+    ]
+  },
+  "legacy-teams/super-star/super-star-17": {
+    "source": "legacy-teams/super-star/494447303_2836502079885385_7454474511240227304_n.jpg",
+    "variants": [
+      {
+        "w": 400,
+        "h": 300
+      },
+      {
+        "w": 1400,
+        "h": 1050
+      }
+    ]
+  }
+}

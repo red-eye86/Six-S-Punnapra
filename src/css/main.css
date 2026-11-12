@@ -1,0 +1,27 @@
+/* main.css: single stylesheet entry. Vite bundles it into one hashed file.
+   Order matters: the files below keep the exact cascade order of the legacy styles.css. */
+
+/* Self-hosted fonts (only the weights the site used from Google Fonts) */
+@import "@fontsource/outfit/300.css";
+@import "@fontsource/outfit/500.css";
+@import "@fontsource/outfit/700.css";
+@import "@fontsource/outfit/900.css";
+@import "@fontsource/noto-sans-malayalam/400.css";
+@import "@fontsource/noto-sans-malayalam/700.css";
+
+@import "./tokens.css";
+@import "./base.css";
+@import "./components/navbar.css";
+@import "./pages/home.css";
+@import "./pages/legacy-teams.css";
+@import "./components/lightbox.css";
+@import "./components/sections.css";
+@import "./pages/sports.css";
+@import "./components/footer-form-toast.css";
+@import "./pages/officials.css";
+@import "./responsive.css";
+@import "./pages/org-chart.css";
+
+/* Phase 1 additions: replacements for inline styles, icons, accessibility fixes */
+@import "./components/additions.css";
+

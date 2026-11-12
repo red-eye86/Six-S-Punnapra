@@ -1,0 +1,25 @@
+{
+  "name": "punnapra-sixes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Punnapra Sixes (Six S Punnapra) club website",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "images": "node scripts/optimize-images.mjs",
+    "icons": "node scripts/build-icons.mjs",
+    "check": "node scripts/check-dist.mjs"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^7.3.1",
+    "sharp": "^0.35.5",
+    "vite": "^8.3.8"
+  },
+  "dependencies": {
+    "@fontsource/noto-sans-malayalam": "^5.3.0",
+    "@fontsource/outfit": "^5.3.0",
+    "particles.js": "^2.0.0"
+  }
+}

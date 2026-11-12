@@ -1,0 +1,47 @@
+<!-- Toast Notification -->
+    <div id="toast" class="toast" role="status" aria-live="polite">
+        <svg class="icon" aria-hidden="true"><use href="#i-check-circle"></use></svg>
+        <span data-en="Registration Submitted successfully!" data-ml="രജിസ്ട്രേഷൻ വിജയകരമായി സമർപ്പിച്ചു!">Registration Submitted successfully!</span>
+    </div>
+
+    <!-- Image Modal (Lightbox) -->
+    <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button type="button" class="modal-close" aria-label="Close">&times;</button>
+        <button type="button" class="modal-prev" aria-label="Previous image">&#10094;</button>
+        <button type="button" class="modal-next" aria-label="Next image">&#10095;</button>
+        <img class="modal-content" id="modalImage" alt="">
+    </div>
+
+    <footer class="footer" id="register">
+        <div class="footer-content floating-card">
+            <div class="contact-info">
+                <h3 data-en="Join the Community" data-ml="ഞങ്ങളോടൊപ്പം ചേരൂ">Join the Community</h3>
+                <p>📍 <span data-en="Near Viyani Cemetery, Punnapra" data-ml="വിയാനി സെമിത്തേരിക്ക് സമീപം, പുന്നപ്ര">Near Viyani Cemetery, Punnapra</span></p>
+                <!--
+                  Social links are hidden until the real URLs are supplied (see PLACEHOLDERS.md).
+                  To enable, replace TODO_REPLACE_ME and uncomment:
+                <div class="social-links">
+                    <a href="TODO_REPLACE_ME_FACEBOOK" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+                    <a href="TODO_REPLACE_ME_INSTAGRAM" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+                    <a href="TODO_REPLACE_ME_YOUTUBE" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a>
+                </div>
+                -->
+            </div>
+            <div class="registration">
+                <h4 data-en="Parent Registration" data-ml="രക്ഷിതാക്കളുടെ രജിസ്ട്രേഷൻ">Parent Registration</h4>
+                <iframe name="hidden_iframe" id="hidden_iframe" title="Registration submission" hidden></iframe>
+                <!-- Google Form endpoint and entry.* names must stay exactly as they are -->
+                <form id="regForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSefGXNf4WHA2k6JybfPVJQbuy9Ez1iPEmvA0ltv9ZNWEFdcPA/formResponse" method="POST" target="hidden_iframe">
+                    <label class="visually-hidden" for="reg-parent" data-en="Parent's Name" data-ml="രക്ഷിതാവിന്റെ പേര്">Parent's Name</label>
+                    <input id="reg-parent" type="text" name="entry.303431855" placeholder="Parent's Name" data-placeholder-ml="രക്ഷിതാവിന്റെ പേര്" autocomplete="name" maxlength="80" required>
+                    <label class="visually-hidden" for="reg-child" data-en="Child's Name" data-ml="കുട്ടിയുടെ പേര്">Child's Name</label>
+                    <input id="reg-child" type="text" name="entry.260754013" placeholder="Child's Name" data-placeholder-ml="കുട്ടിയുടെ പേര്" autocomplete="off" maxlength="80" required>
+                    <label class="visually-hidden" for="reg-phone" data-en="Phone Number" data-ml="ഫോൺ നമ്പർ">Phone Number</label>
+                    <input id="reg-phone" type="tel" name="entry.51502017" placeholder="Phone Number" data-placeholder-ml="ഫോൺ നമ്പർ" inputmode="tel" autocomplete="tel" maxlength="16" pattern="(\+91[ \-]?)?[6-9][0-9]{4} ?[0-9]{5}" title="10-digit mobile number, e.g. 98470 12345" data-title-ml="10 അക്ക മൊബൈൽ നമ്പർ നൽകുക (ഉദാ: 98470 12345)" required>
+                    <button type="submit" class="submit-btn" data-en="Enroll Now" data-ml="രജിസ്റ്റർ ചെയ്യുക">Enroll Now</button>
+                </form>
+            </div>
+        </div>
+        <p class="copyright">© 2026 Six S Punnapra. All rights reserved.</p>
+    </footer>
+

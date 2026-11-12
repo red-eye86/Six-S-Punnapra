@@ -1,0 +1,37 @@
+/* responsive.css (moved verbatim from legacy styles.css lines 987-1022) */
+/* Mobile Responsiveness */
+@media(max-width: 768px) {
+    .vball { width: 100px; top: 100px; left: -10px; opacity: 0.3; }
+    .fball { width: 80px; bottom: 20px; right: -10px; opacity: 0.3; }
+    .cball { width: 50px; top: 120px; right: 0; opacity: 0.3; }
+    .shuttle { width: 60px; bottom: 40px; left: 0; opacity: 0.3; }
+    
+    .tabs-container { padding: 15px; }
+    .tabs-content { padding: 15px; }
+
+    .tabs-header {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 15px;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+    }
+    
+    .tabs-header::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .tab-btn {
+        flex: 0 0 auto;
+    }
+    
+    .team-photo-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+    }
+    
+    .team-photo {
+        height: 80px;
+    }
+}
